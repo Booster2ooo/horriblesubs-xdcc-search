@@ -1,0 +1,7 @@
+{
+	"out": "doc/",
+	"exclude": [
+		"**/horriblesubs-cache.ts",
+		"**/horriblesubs-http-client.ts"
+	]
+}
