@@ -1,6 +1,6 @@
 {
   "name": "horriblesubs-xdcc-search",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unofficial HorribleSubs XDCC packages search API",
   "main": "./dist/esm5/index.js",
   "module": "./dist/esm5/index.js",

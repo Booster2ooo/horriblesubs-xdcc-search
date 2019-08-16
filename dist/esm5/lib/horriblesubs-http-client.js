@@ -32,6 +32,9 @@ var defaultRequestOptions = {
         options.path += "search.php?t=" + terms;
         options.path = encodeURI(options.path);
         request = https.request(options, function (response) {
+            if (response.statusCode != 200) {
+                return reject("Bad response for " + options.path + " - status: " + response.statusCode);
+            }
             response.on('data', handlers.data.bind(null, httpChunks));
             response.on('end', handlers.end.bind(null, httpChunks, resolve));
         });
